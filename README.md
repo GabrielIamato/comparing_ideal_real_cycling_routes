@@ -86,18 +86,7 @@ Or install the core packages manually:
 pip install pandas numpy geopandas folium matplotlib seaborn networkx branca shapely osmnx
 ```
 
-**2. Run a specific analysis**
-
-```bash
-python strava_eda.py
-python analysis_connectivity.py
-python analysis_demographics.py
-python analysis_gap.py
-python analysis_hex_coverage.py
-python analysis_speed_safety.py
-```
-
-**3. Run the notebooks**
+**2. Run the notebooks**
 
 Launch Jupyter and run cells sequentially:
 
