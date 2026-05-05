@@ -1,4 +1,4 @@
-# BikeScience São Paulo — Cycling Infrastructure Gap Analysis
+# BikeScience São Paulo - Cycling Infrastructure Gap Analysis
 
 A geospatial research project analyzing bicycle mobility in São Paulo, Brazil. It integrates Strava Metro trip data with OpenStreetMap road networks and census demographics to identify infrastructure gaps and prioritize cycling investment areas.
 
@@ -6,7 +6,7 @@ A geospatial research project analyzing bicycle mobility in São Paulo, Brazil. 
 
 ## Table of Contents
 
-- [BikeScience São Paulo — Cycling Infrastructure Gap Analysis](#bikescience-são-paulo--cycling-infrastructure-gap-analysis)
+- [BikeScience São Paulo - Cycling Infrastructure Gap Analysis](#bikescience-são-paulo--cycling-infrastructure-gap-analysis)
   - [Table of Contents](#table-of-contents)
   - [Analyses](#analyses)
   - [About the Project](#about-the-project)
@@ -23,7 +23,7 @@ A geospatial research project analyzing bicycle mobility in São Paulo, Brazil. 
 
 | Script | Description |
 |--------|-------------|
-| `strava_eda.py` | Exploratory Data Analysis — temporal patterns, spatial distributions, and activity type breakdowns across the road network. |
+| `strava_eda.py` | Exploratory Data Analysis - temporal patterns, spatial distributions, and activity type breakdowns across the road network. |
 | `analysis_gap.py` | Ranks infrastructure-free roads by a priority score (`trip_count × edge_length_m`), highlighting high-demand unprotected segments. |
 
 Interactive HTML maps and static PNG charts are saved to the `analises/` directory.
@@ -34,7 +34,7 @@ Interactive HTML maps and static PNG charts are saved to the `analises/` directo
 
 This work is part of the **BikeScience** research initiative, which applies data science methods to support evidence-based cycling policy in Brazilian cities. The São Paulo case study combines large-scale crowdsourced mobility data with official road geometry to answer two core questions:
 
-- **Where are the structural gaps** in the cycling network — roads that, if upgraded, would most benefit high-demand unprotected segments?
+- **Where are the structural gaps** in the cycling network - roads that, if upgraded, would most benefit high-demand unprotected segments?
 
 The methodology builds a merged geospatial dataset of OSM road edges enriched with Strava trip counts and infrastructure presence flags. Each analysis module scores and ranks road segments along a different dimension of priority.
 
@@ -61,8 +61,8 @@ The methodology builds a merged geospatial dataset of OSM road edges enriched wi
 ### Strava Metro (`data/strava/`)
 
 Aggregated, anonymized trip data licensed through the **Strava Metro** program. It includes:
-- **Edge trip counts** — number of trips traversing each road segment (forward and reverse directions), with commute/leisure and demographic splits.
-- **Origin-destination flows** — aggregated OD pairs for January 2023.
+- **Edge trip counts** - number of trips traversing each road segment (forward and reverse directions), with commute/leisure and demographic splits.
+- **Origin-destination flows** - aggregated OD pairs for January 2023.
 
 > **These data are private** and are not included in this repository. Access requires a Strava Metro agreement.
 
@@ -105,8 +105,8 @@ Launch Jupyter and run cells sequentially:
 jupyter notebook
 ```
 
-- `analises_strava_EDA.ipynb` — main organized EDA
-- `collect_and_evaluate_choicesets.ipynb` — route choice set evaluation
+- `analises_strava_EDA.ipynb` - main organized EDA
+- `collect_and_evaluate_choicesets.ipynb` - route choice set evaluation
 
 All outputs are saved to `analises/`.
 
